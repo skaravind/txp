@@ -599,9 +599,9 @@
 
 
   .blinking-cursor {
-    font-weight: 500;
+    font-weight: 600;
     margin-left: 4px;
-    font-size: 20px;
+    font-size: 25px;
     color: white !important;
     -webkit-animation: 1s blink step-end infinite;
     -moz-animation: 1s blink step-end infinite;

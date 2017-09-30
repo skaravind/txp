@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   // typing animation
   (function($) {
-    $.fn.writeText = function(content) {
+    $.fn.writeText = function(content, interval) {
         var contentArray = content.split(""),
             current = 0,
             elem = this;
@@ -10,13 +10,14 @@ $(document).ready(function() {
             if(current < contentArray.length) {
                 elem.text(elem.text() + contentArray[current++]);
             }
-        }, 80);
+        }, interval);
     };
     
   })(jQuery);
 
   // input text for typing animation 
-  $("#holder").writeText("UNCOVERING THE 4TH DIMeNSION");
+  $("#holder").writeText("THE 4TH DIMENSION",80);
+  $("#holder2").writeText("7th October",150);
 
   // initialize wow.js
   new WOW().init();
